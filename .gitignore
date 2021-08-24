@@ -1,0 +1,6 @@
+<<<<<<< HEAD
+*.pyc
+=======
+/Pipfile.lock
+/Pipfile
+>>>>>>> 8cd1c546e3d831bdbf350ad5fc31bfa12ead8d84
