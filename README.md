@@ -46,3 +46,11 @@ python server.py
 ```
 java "-Djava.library.path=./DynamoDBLocal_lib" -jar DynamoDBLocal.jar -sharedDb
 ```
+## test commands
+
+```
+$env:FLASK_ENV="development"
+$env:FLASK_APP="hello.py"
+flask run
+
+```
