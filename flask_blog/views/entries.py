@@ -5,7 +5,6 @@ from datetime import datetime
 
 @app.route('/')
 def show_entries():
-    # 全ての記事を表示
     entries = [
         {
             'id': 1,
@@ -31,18 +30,17 @@ def add_entry():
 
 @app.route('/entries/new', methods=['GET'])
 def new_entry():
-    # 記事の入力フォームを表示
-    return '記事の入力フォームを表示'
+    return render_template('entries/new.html')
 
 
 @app.route('/entries/<int:id>', methods=['GET'])
 def show_entry(id):
-    # 記事を取得
     entry = {
         'id': 1,
         'title': 'はじめての投稿',
         'text': 'はじめての内容',
         'created_at': datetime.now(),
+
     }
     return render_template('entries/show.html', entry=entry)
 
